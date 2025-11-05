@@ -170,6 +170,7 @@
   /**
    * Init swiper sliders
    */
+<<<<<<< HEAD
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
@@ -185,10 +186,28 @@
   }
 
   window.addEventListener("load", initSwiper);
+=======
+  // function initSwiper() {
+  //   document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+  //     let config = JSON.parse(
+  //       swiperElement.querySelector(".swiper-config").innerHTML.trim()
+  //     );
+
+  //     if (swiperElement.classList.contains("swiper-tab")) {
+  //       initSwiperWithCustomPagination(swiperElement, config);
+  //     } else {
+  //       new Swiper(swiperElement, config);
+  //     }
+  //   });
+  // }
+
+  // window.addEventListener("load", initSwiper);
+>>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
+<<<<<<< HEAD
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
@@ -203,6 +222,185 @@
       }
     }
   });
+=======
+  // window.addEventListener('load', function(e) {
+  //   if (window.location.hash) {
+  //     if (document.querySelector(window.location.hash)) {
+  //       setTimeout(() => {
+  //         let section = document.querySelector(window.location.hash);
+  //         let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
+  //         window.scrollTo({
+  //           top: section.offsetTop - parseInt(scrollMarginTop),
+  //           behavior: 'smooth'
+  //         });
+  //       }, 100);
+  //     }
+  //   }
+  // });
+  const books = [
+  {
+    image: "assets/img/portfolio/book-1.jpg",
+    title: "Fundamentals of Intelligent Information of Things (IIoT), Book Publication",
+    CoAuthors: "-",
+    year: "2023",
+    publisher: "Notion Press",
+    isbn: "9789357579759",
+    description: "Summary for book 1",
+    link: "#"
+  },
+  {
+    image: "assets/img/portfolio/book-2.jpg",
+    title: "Blockchain and Its Applications in IoT(Chapter in: Advances in Blockchain Technologypp. pp 45–60)",
+    CoAuthors: "A. Jayanthiladevi",
+    year: "2021",
+    publisher: "Springer",
+    isbn: "9789876543210",
+    description: "Summary for book 2",
+    link: "#"
+  },
+  // ... Add up to 13 books in this array
+  {
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "AI Enabled Cybersecurity for IoT Devices(Book Chapter in:Cybersecurity Trends and Challenges pp. 329–345)",
+    CoAuthors: " N. Keerthana ",
+    year: "2021",
+    publisher: "IGI Global",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },
+  {
+    image: "assets/img/portfolio/book-3.jpg",
+    title: " Machine Learning for Smart Healthcare Systems, Book Chapter in: Intelligent Healthcare Systems pp. 10–22",
+    CoAuthors: " R. Vaishnavi ",
+    year: "2021",
+    publisher: " CRC Press",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },
+  {
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },
+  {
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  }
+  // Repeat, up to 13 entries!
+];
+
+function updateBookInfo(index) {
+  const book = books[index];
+  document.getElementById("book-info-panel").innerHTML = `
+    <h3>Books</h3>
+    <ul>
+      <li><strong>Title</strong>: ${book.title}</li>
+      <li><strong>Co-Authors</strong>: ${book.authors}</li>
+      <li><strong>Year</strong>: ${book.year}</li>
+      <li><strong>Publisher</strong>: ${book.publisher}</li>
+      <li><strong>ISBN</strong>: ${book.isbn}</li>
+      <li><strong>Description</strong>: ${book.description}</li>
+      <div class="button-center">
+        <button class="btn" onclick="window.open('${book.link}', '_blank')">BuyNow</button>
+      </div>
+    </ul>
+  `;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const mySwiper = new Swiper(".portfolio-details-slider", {
+    loop: true,
+    speed: 600,
+    autoplay: { delay: 2000 },
+    slidesPerView: "auto",
+    pagination: { el: ".swiper-pagination", type: "bullets", clickable: true },
+    on: {
+      init: function() {
+        updateBookInfo(this.realIndex);
+      },
+      slideChange: function() {
+        updateBookInfo(this.realIndex);
+      }
+    }
+  });
+});
+>>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
 
   /**
    * Navmenu Scrollspy
@@ -226,4 +424,34 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+<<<<<<< HEAD
 })();
+=======
+})();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('.services-list a');
+      const panels = document.querySelectorAll('.year-panel');
+
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const year = link.dataset.year;
+
+          links.forEach(l => l.classList.toggle('active', l === link));
+          panels.forEach(p => p.classList.toggle('is-active', p.dataset.year === year));
+
+          // Refresh AOS animations after click
+          if (window.AOS && typeof window.AOS.refresh === 'function') {
+            setTimeout(() => window.AOS.refresh(), 50);
+          }
+        });
+      });
+
+      // Refresh AOS animations after DOM is ready
+      if (window.AOS && typeof window.AOS.refresh === "function") {
+        setTimeout(function () { window.AOS.refresh(); }, 50);
+      }
+    });
+>>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7

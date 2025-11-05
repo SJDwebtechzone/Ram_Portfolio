@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Book Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
+  <style>
+    .portfolio-details-slider { margin-bottom: 24px; }
+    .portfolio-info ul { list-style-type: none; padding: 0; }
+    .portfolio-info li { margin-bottom: 8px; }
+    .button-center { display: flex; justify-content: center; }
+    .btn { background-color: #2563eb; color: #fff; padding: 10px 24px; border: none; border-radius: 25px; }
+    .swiper { width: 100%; height: 340px; }
+    .swiper-slide img { width: 100%; height: 320px; object-fit: cover; border-radius: 12px; }
+  </style>
+</head>
+<body>
+<section id="portfolio-details" class="portfolio-details section">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-8">
+        <div class="portfolio-details-slider swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides for 13 books -->
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-7.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-8.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-9.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-10.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-11.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-12.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/portfolio/book-13.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="portfolio-info" id="book-info-panel">
+          <!-- Book details will be injected by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+const books = [
+  {
+    image: "assets/img/portfolio/book-1.jpg",
+    title: "Book Title 1",
+    authors: "Author A, Author B",
+    year: "2023",
+    publisher: "Notion Press",
+    isbn: "9789357579759",
+    description: "Summary for book 1",
+    link: "#"
+  },
+  {
+    image: "assets/img/portfolio/book-2.jpg",
+    title: "Book Title 2",
+    authors: "Author C",
+    year: "2022",
+    publisher: "Publisher 2",
+    isbn: "9789876543210",
+    description: "Summary for book 2",
+    link: "#"
+  },
+  // ... Add up to 13 books in this array
+  {
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },
+  {
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 4",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },{
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },
+  {
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  },
+  {
+    image: "assets/img/portfolio/book-3.jpg",
+    title: "Book Title 3",
+    authors: "Author D, Author E",
+    year: "2021",
+    publisher: "Publisher 3",
+    isbn: "9789123456789",
+    description: "Summary for book 3",
+    link: "#"
+  }
+  // Repeat, up to 13 entries!
+];
+
+function updateBookInfo(index) {
+  const book = books[index];
+  document.getElementById("book-info-panel").innerHTML = `
+    <h3>Books</h3>
+    <ul>
+      <li><strong>Title</strong>: ${book.title}</li>
+      <li><strong>Co-Authors</strong>: ${book.authors}</li>
+      <li><strong>Year</strong>: ${book.year}</li>
+      <li><strong>Publisher</strong>: ${book.publisher}</li>
+      <li><strong>ISBN</strong>: ${book.isbn}</li>
+      <li><strong>Description</strong>: ${book.description}</li>
+      <div class="button-center">
+        <button class="btn" onclick="window.open('${book.link}', '_blank')">BuyNow</button>
+      </div>
+    </ul>
+  `;
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  const mySwiper = new Swiper(".portfolio-details-slider", {
+    loop: true,
+    speed: 600,
+    autoplay: { delay: 2000 },
+    slidesPerView: "auto",
+    pagination: { el: ".swiper-pagination", type: "bullets", clickable: true },
+    on: {
+      init: function() {
+        updateBookInfo(this.realIndex);
+      },
+      slideChange: function() {
+        updateBookInfo(this.realIndex);
+      }
+    }
+  });
+});
+</script>
+</body>
+</html>

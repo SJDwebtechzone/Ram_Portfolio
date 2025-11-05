@@ -869,7 +869,10 @@ section,
   color: #fff;
   transition: 0.3s;
   line-height: 1.2;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link:hover,
@@ -1156,7 +1159,11 @@ section,
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
+<<<<<<< HEAD
   height: 12px;
+=======
+  height: 14px;
+>>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
@@ -1271,6 +1278,165 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 .starter-section {
   /* Add your styles here */
 }
+=======
+/* patent*/
+/* Card container with mild outline */
+.patent-card {
+  border: 1px solid #e2e8f0;        /* mild outline */
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 16px 18px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04); /* very subtle */
+  margin-top: 16px;
+}
+
+/* Card title */
+.patent-heading {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Two-column grid: labels + values; colon aligned at the end of first column */
+.title-container {
+  --label-col: 220px;                /* adjust label column width as needed */
+  display: grid;
+  grid-template-columns: var(--label-col) 1fr; /* label | value */
+  column-gap: 12px;
+  row-gap: 8px;
+  align-items: baseline;
+}
+
+/* Left label: left-aligned text, colon aligned at column edge */
+.title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  display: flex;
+  justify-content: space-between;    /* pushes colon to the right edge of label column */
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.title::after {
+  content: ":";
+  margin-left: 8px;
+}
+
+/* Right value */
+.description {
+  margin: 0;
+  color: #334155;
+  font-size: 1rem;
+}
+
+/* Responsive: stack label above value, hide colon */
+@media (max-width: 640px) {
+  .title-container {
+    grid-template-columns: 1fr;
+    row-gap: 4px;
+  }
+  .title {
+    justify-content: flex-start;
+  }
+  .title::after {
+    content: "";
+  }
+}
+:root {
+  --accent: #2563eb;      /* change to your brand color */
+  --card-bg: #ffffff;
+  --card-hover-bg: #f8fafc;
+}
+
+/* Left accent stripe (animates on hover) */
+.patent-card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 0;
+  background: linear-gradient(180deg, var(--accent), #60a5fa);
+  transition: width .2s ease;
+  opacity: .85;
+}
+
+/* Hover and focus states */
+.patent-card:hover,
+.patent-card:focus-within {
+  transform: translateY(-4px);
+  background-color: var(--card-hover-bg);
+  border-color: color-mix(in oklab, var(--accent) 55%, #e2e8f0);
+  box-shadow:
+    0 10px 24px rgba(2, 6, 23, 0.12),
+    0 2px 8px rgba(2, 6, 23, 0.06);
+}
+
+.patent-card:hover::before,
+.patent-card:focus-within::before {
+  width: 4px; /* accent stripe width */
+}
+
+/* Optional: slight heading color shift on hover */
+.patent-card:hover .patent-heading,
+.patent-card:focus-within .patent-heading {
+  color: var(--accent);
+}
+
+/* Press feedback */
+.patent-card:active {
+  transform: translateY(-2px);
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .patent-card {
+    transition: box-shadow .2s ease, border-color .2s ease, background-color .2s ease;
+  }
+  .patent-card:hover,
+  .patent-card:focus-within,
+  .patent-card:active {
+    transform: none;
+  }
+  .patent-card::before {
+    transition: none;
+    width: 4px; /* keep visible without animation */
+  }
+}
+.year-panel { display: none; }
+.year-panel.is-active { display: block; }
+
+.services-list a.active {
+  background: #e0e7ff;
+  color: #1e40af;
+  font-weight: 600;
+}
+/*Books*/
+.button-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* The wrapper spans the container, button stays auto-sized */
+  background-color: transparent; /* or your accent, as needed */
+  border-radius: 0; /* only if you want background rounding */
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* Do NOT set width! */
+  display: inline-block; /* Ensures auto width based on text */
+}
+
+>>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
