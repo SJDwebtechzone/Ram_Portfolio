@@ -170,7 +170,7 @@
   /**
    * Init swiper sliders
    */
-<<<<<<< HEAD
+
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
@@ -186,28 +186,12 @@
   }
 
   window.addEventListener("load", initSwiper);
-=======
-  // function initSwiper() {
-  //   document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-  //     let config = JSON.parse(
-  //       swiperElement.querySelector(".swiper-config").innerHTML.trim()
-  //     );
 
-  //     if (swiperElement.classList.contains("swiper-tab")) {
-  //       initSwiperWithCustomPagination(swiperElement, config);
-  //     } else {
-  //       new Swiper(swiperElement, config);
-  //     }
-  //   });
-  // }
-
-  // window.addEventListener("load", initSwiper);
->>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-<<<<<<< HEAD
+
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
@@ -222,21 +206,7 @@
       }
     }
   });
-=======
-  // window.addEventListener('load', function(e) {
-  //   if (window.location.hash) {
-  //     if (document.querySelector(window.location.hash)) {
-  //       setTimeout(() => {
-  //         let section = document.querySelector(window.location.hash);
-  //         let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
-  //         window.scrollTo({
-  //           top: section.offsetTop - parseInt(scrollMarginTop),
-  //           behavior: 'smooth'
-  //         });
-  //       }, 100);
-  //     }
-  //   }
-  // });
+
   const books = [
   {
     image: "assets/img/portfolio/book-1.jpg",
@@ -400,7 +370,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
->>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
+
 
   /**
    * Navmenu Scrollspy
@@ -424,9 +394,7 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-<<<<<<< HEAD
-})();
-=======
+
 })();
 
 
@@ -454,4 +422,4 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () { window.AOS.refresh(); }, 50);
       }
     });
->>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
+
