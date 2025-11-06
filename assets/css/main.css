@@ -869,10 +869,6 @@ section,
   color: #fff;
   transition: 0.3s;
   line-height: 1.2;
-<<<<<<< HEAD
-  
-=======
->>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link:hover,
@@ -1159,11 +1155,8 @@ section,
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
-<<<<<<< HEAD
-  height: 12px;
-=======
+
   height: 14px;
->>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
@@ -1278,11 +1271,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-<<<<<<< HEAD
-.starter-section {
-  /* Add your styles here */
-}
-=======
+
 /* patent*/
 /* Card container with mild outline */
 .patent-card {
@@ -1438,5 +1427,3 @@ section,
   /* Do NOT set width! */
   display: inline-block; /* Ensures auto width based on text */
 }
-
->>>>>>> 9996bc96398a6be0d3f113562e76b910249835d7
