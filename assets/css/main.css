@@ -1427,3 +1427,26 @@ section,
   /* Do NOT set width! */
   display: inline-block; /* Ensures auto width based on text */
 }
+/* main.css*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.card-title {
+  color: #0d6efd;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(13, 110, 253, 0.5);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.list-styled li {
+  transition: transform 0.3s ease;
+}
+
+.list-styled li:hover {
+  transform: translateX(8px);
+}

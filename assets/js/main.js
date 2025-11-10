@@ -423,3 +423,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 
+// Future enhancements: filter cards, load data dynamically, dark mode toggle
+console.log("Research Hub loaded");
